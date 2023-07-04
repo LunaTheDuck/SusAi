@@ -6,7 +6,7 @@ class MyAi():
     model = ''
     tokenizer = ''
     
-    def __init__(self, name, (bool) safetensors, (str) modelauthor):
+    def __init__(self, name, safetensors, modelauthor):
         if torch.cuda.is_available():
             device = 'cuda'
         else :
